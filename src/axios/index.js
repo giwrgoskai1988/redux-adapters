@@ -9,6 +9,7 @@ const request = ({ method, url, params, data = {} }) => {
     method,
     params,
     data,
+    headers: { "Content-Type": "application/json" },
   };
 
   return axios.request(options);
